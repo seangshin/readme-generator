@@ -1,28 +1,28 @@
-# 1
+# Title
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
   
   ## Description
-  2
+  Description
 
-  ##Table of Contents
+  ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
 - [Credits](#credits)
 - [License](#license)
   
   ## Installation
-  3
+  Installation
   
   ## Usage
-  4
+  Usage
   
-  ##Credits
+  ## Credits
 
-  ##License
+  ## License
   MIT
 
   ## Contributions
-  5
+  Contribution
 
   ## Tests
-  6
+  Teset
