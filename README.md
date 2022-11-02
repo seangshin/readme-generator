@@ -11,6 +11,7 @@
 - [License](#license)
 - [Contributions](#contributions)
 - [Tests](#tests)
+- [Questions](#questions)
   
   ## Installation
   Installation
@@ -27,4 +28,8 @@
   Contribution
 
   ## Tests
-  Teset
+  Tests
+  
+  ## Questions
+  GitHub URL: https://github.com/seangshin
+  Reach me with additional questions at shin.seang@gmail.com

@@ -5,7 +5,7 @@ const inquirer = require("inquirer");
 console.log("Running README Generator Application...");//debug message 
 
 //Function to generate README.md file using an object destructor and template literals
-const generateREADME = ({title, description, installation, usage, contributions, tests, license} , badge) =>
+const generateREADME = ({title, description, installation, usage, contributions, tests, license, github, email} , badge) =>
   `# ${title}
   ${badge}
   
@@ -19,6 +19,7 @@ const generateREADME = ({title, description, installation, usage, contributions,
 - [License](#license)
 - [Contributions](#contributions)
 - [Tests](#tests)
+- [Questions](#questions)
   
   ## Installation
   ${installation}
@@ -35,7 +36,11 @@ const generateREADME = ({title, description, installation, usage, contributions,
   ${contributions}
 
   ## Tests
-  ${tests}`;
+  ${tests}
+  
+  ## Questions
+  GitHub URL: https://github.com/${github}
+  Reach me with additional questions at ${email}`;
 
 //Invokes the inquirer and prompt method to get user input from the command line interface
 //inquirer.prompt passes in questions (in the form of an array of objects) and returns a promise
@@ -76,6 +81,16 @@ inquirer
       message: "Choose a license",
       name: "license",
       choices: ["MIT", "GPLv2", "Apache", "Mozilla"],
+    },
+    {
+      type: "input",
+      message: "Enter GitHub username",
+      name: "github",
+    },
+    {
+      type: "input",
+      message: "Enter email",
+      name: "email",
     },
   ])
   //for a resolved promise, use the generateREADME function and pass in the answers (object) given by prompt
