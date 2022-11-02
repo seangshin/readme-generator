@@ -116,6 +116,4 @@ inquirer
     );
   })
   //for a rejected promise, output an error
-  .catch((error) => {
-    //add error
-  })
+  .catch((error) => console.error(error));
