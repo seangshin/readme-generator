@@ -12,7 +12,7 @@ const generateREADME = ({title, description, installation, usage, contribution, 
   ## Description
   ${description}
 
-  ##Table of Contents
+  ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
 - [Credits](#credits)
@@ -24,9 +24,9 @@ const generateREADME = ({title, description, installation, usage, contribution, 
   ## Usage
   ${usage}
   
-  ##Credits
+  ## Credits
 
-  ##License
+  ## License
   ${license}
 
   ## Contributions
