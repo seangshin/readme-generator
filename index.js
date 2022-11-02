@@ -5,7 +5,7 @@ const inquirer = require("inquirer");
 console.log("Running README Generator Application...");//debug message 
 
 //Function to generate README.md file using an object destructor and template literals
-const generateREADME = ({title, description, installation, usage, contribution, test, license} , badge) =>
+const generateREADME = ({title, description, installation, usage, contributions, tests, license} , badge) =>
   `# ${title}
   ${badge}
   
@@ -17,6 +17,8 @@ const generateREADME = ({title, description, installation, usage, contribution, 
 - [Usage](#usage)
 - [Credits](#credits)
 - [License](#license)
+- [Contributions](#contributions)
+- [Tests](#tests)
   
   ## Installation
   ${installation}
@@ -30,10 +32,10 @@ const generateREADME = ({title, description, installation, usage, contribution, 
   ${license}
 
   ## Contributions
-  ${contribution}
+  ${contributions}
 
   ## Tests
-  ${test}`;
+  ${tests}`;
 
 //Invokes the inquirer and prompt method to get user input from the command line interface
 //inquirer.prompt passes in questions (in the form of an array of objects) and returns a promise
@@ -62,12 +64,12 @@ inquirer
     {
       type: "input",
       message: "Enter the contribution guidelines",
-      name: "contribution",
+      name: "contributions",
     },  
     {
       type: "input",
       message: "Enter the test instructions",
-      name: "test",
+      name: "tests",
     },  
     {
       type: "list",

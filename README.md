@@ -9,6 +9,8 @@
 - [Usage](#usage)
 - [Credits](#credits)
 - [License](#license)
+- [Contributions](#contributions)
+- [Tests](#tests)
   
   ## Installation
   Installation
